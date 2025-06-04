@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炉石传说 Web版</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="opponent-hand" id="opponent-hand"></div>
+        <div class="opponent-stats">
+            <div class="hero opponent-hero">
+                <div class="hero-health">30</div>
+                <div class="hero-mana"></div>
+                <div class="hero-power">英雄技能</div>
+            </div>
+        </div>
+        
+        <div class="battlefield">
+            <div class="opponent-field" id="opponent-field"></div>
+            <div class="player-field" id="player-field"></div>
+        </div>
+        
+        <div class="player-stats">
+            <div class="hero player-hero">
+                <div class="hero-health">30</div>
+                <div class="hero-mana"></div>
+                <div class="hero-power">英雄技能</div>
+            </div>
+        </div>
+        <div class="player-hand" id="player-hand"></div>
+        
+        <button id="end-turn" class="end-turn-btn">结束回合</button>
+    </div>
+
+    <!-- 音效资源 -->
+    <audio id="card-play" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3" preload="auto"></audio>
+    <audio id="attack-sound" src="https://assets.mixkit.co/active_storage/sfx/2577/2577-preview.mp3" preload="auto"></audio>
+    <audio id="hero-power" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3" preload="auto"></audio>
+    <audio id="game-start" src="https://assets.mixkit.co/active_storage/sfx/2570/2570-preview.mp3" preload="auto"></audio>
+    <audio id="victory" src="https://assets.mixkit.co/active_storage/sfx/2578/2578-preview.mp3" preload="auto"></audio>
+    <audio id="defeat" src="https://assets.mixkit.co/active_storage/sfx/2569/2569-preview.mp3" preload="auto"></audio>
+
+    <!-- 粒子效果容器 -->
+    <div id="particles-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
